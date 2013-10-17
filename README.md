@@ -1,0 +1,4 @@
+autoprint
+=========
+
+shoes printer
