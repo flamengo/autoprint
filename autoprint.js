@@ -1,7 +1,7 @@
 try {
 	var page = require('webpage').create(), jqueryPath = 'jquery.js', fs = require('fs'), files = fs.list('img'), imgs = [];
 	for (var i = 0, ii = files.length, j = 1; i < ii; i++)
-		if (/[A-Za-z]+\.[A-Za-z]+/.test(files[i])) {
+		if (/[A-Za-z0-9]+\.[A-Za-z0-9]+/.test(files[i])) {
 			imgs.push(files[i]);
 			console.log(j++ + ': ' + files[i]);
 		}
